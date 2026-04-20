@@ -1,185 +1,164 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Skill Swap</title>
+<meta charset="UTF-8">
+<title>Skill Swap</title>
 
-  <!-- Google Font -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
 
-  <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-      font-family: 'Poppins', sans-serif;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    body {
-      background: #cfd8e6;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100vh;
-    }
+body {
+  background: #cfd8e6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
 
-    .container {
-      width: 90%;
-      max-width: 1200px;
-      padding: 30px;
-      border-radius: 25px;
-      background: rgba(255, 255, 255, 0.4);
-      backdrop-filter: blur(15px);
-      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
-      position: relative;
-      overflow: hidden;
-    }
+.container {
+  width: 90%;
+  max-width: 1200px;
+  padding: 30px;
+  border-radius: 25px;
+  background: rgba(255, 255, 255, 0.4);
+  backdrop-filter: blur(15px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+  position: relative;
+  overflow: hidden;
+}
 
-    /* NAVBAR */
-    <div class="navbar">
+/* NAVBAR */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-  <div class="logo-box">
-    <img src="logo.png" class="logo-img">
-    <span class="logo-text">Skill Swap</span>
-  </div>
+.logo-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 
-  <div class="nav-links">
-    <span>Home</span>
-    <span>Browse Skills</span>
-    <span>Community</span>
-    <span>About</span>
-  </div>
+.logo-box img {
+  width: 40px;
+}
 
-  <div class="nav-right">
-    <button class="login">Log in</button>
-    <button class="signup">Sign up</button>
-  </div>
+.nav-links {
+  display: flex;
+  gap: 25px;
+  color: #333;
+  font-size: 14px;
+}
 
-</div>
+.nav-right button {
+  padding: 8px 18px;
+  border-radius: 20px;
+  border: none;
+  margin-left: 10px;
+  cursor: pointer;
+}
 
-    .logo-box {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
+.login {
+  background: transparent;
+}
 
-    .logo-box img {
-      width: 40px;
-    }
+.signup {
+  background: black;
+  color: white;
+}
 
-    .logo-box h2 {
-      color: #2d2d5a;
-    }
+/* HERO */
+.hero {
+  margin-top: 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-    .nav-links {
-      display: flex;
-      gap: 25px;
-      color: #333;
-      font-size: 14px;
-    }
+.hero-text {
+  max-width: 500px;
+}
 
-    .nav-right button {
-      padding: 8px 18px;
-      border-radius: 20px;
-      border: none;
-      margin-left: 10px;
-      cursor: pointer;
-    }
+.hero-text h1 {
+  font-size: 40px;
+  color: #1c1c3c;
+}
 
-    .login {
-      background: transparent;
-    }
+.hero-text p {
+  margin: 15px 0;
+  color: #555;
+}
 
-    .signup {
-      background: black;
-      color: white;
-    }
+.buttons button {
+  padding: 12px 20px;
+  border-radius: 25px;
+  border: none;
+  margin-right: 10px;
+  cursor: pointer;
+}
 
-    /* HERO */
-    .hero {
-      margin-top: 60px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
+.primary {
+  background: linear-gradient(45deg, #6c63ff, #8a7cff);
+  color: white;
+}
 
-    .hero-text {
-      max-width: 500px;
-    }
+.secondary {
+  background: #eee;
+}
 
-    .hero-text h1 {
-      font-size: 40px;
-      color: #1c1c3c;
-    }
+/* GLASS CARD */
+.glass-card {
+  width: 250px;
+  height: 300px;
+  border-radius: 25px;
+  background: rgba(255,255,255,0.3);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255,255,255,0.5);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
-    .hero-text p {
-      margin: 15px 0;
-      color: #555;
-    }
+/* SHAPES */
+.shape1 {
+  position: absolute;
+  width: 300px;
+  height: 200px;
+  background: linear-gradient(45deg, purple, pink);
+  border-radius: 50%;
+  right: 50px;
+  top: 150px;
+  filter: blur(50px);
+}
 
-    .buttons button {
-      padding: 12px 20px;
-      border-radius: 25px;
-      border: none;
-      margin-right: 10px;
-      cursor: pointer;
-    }
+.shape2 {
+  position: absolute;
+  width: 150px;
+  height: 150px;
+  background: linear-gradient(45deg, orange, red);
+  border-radius: 50%;
+  right: 150px;
+  top: 300px;
+  filter: blur(40px);
+}
 
-    .primary {
-      background: linear-gradient(45deg, #6c63ff, #8a7cff);
-      color: white;
-    }
-
-    .secondary {
-      background: #eee;
-    }
-
-    /* GLASS CARD */
-    .glass-card {
-      width: 250px;
-      height: 300px;
-      border-radius: 25px;
-      background: rgba(255,255,255,0.3);
-      backdrop-filter: blur(20px);
-      border: 1px solid rgba(255,255,255,0.5);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
-    /* GRADIENT SHAPES */
-    .shape1 {
-      position: absolute;
-      width: 300px;
-      height: 200px;
-      background: linear-gradient(45deg, purple, pink);
-      border-radius: 50%;
-      right: 50px;
-      top: 150px;
-      filter: blur(50px);
-    }
-
-    .shape2 {
-      position: absolute;
-      width: 150px;
-      height: 150px;
-      background: linear-gradient(45deg, orange, red);
-      border-radius: 50%;
-      right: 150px;
-      top: 300px;
-      filter: blur(40px);
-    }
-
-    /* STATS */
-    .stats {
-      margin-top: 50px;
-      display: flex;
-      gap: 50px;
-      font-size: 18px;
-    }
-
-  </style>
+/* STATS */
+.stats {
+  margin-top: 50px;
+  display: flex;
+  gap: 50px;
+  font-size: 18px;
+}
+</style>
 </head>
 
 <body>
@@ -232,7 +211,6 @@
     <div>25K+ Swaps</div>
   </div>
 
-  <!-- SHAPES -->
   <div class="shape1"></div>
   <div class="shape2"></div>
 
