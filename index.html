@@ -1,1 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Skill Swap</title>
 
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Poppins', sans-serif;
+    }
+
+    body {
+      background: #cfd8e6;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      padding: 30px;
+      border-radius: 25px;
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(15px);
+      box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+      position: relative;
+      overflow: hidden;
+    }
+
+    /* NAVBAR */
+    <div class="navbar">
+
+  <div class="logo-box">
+    <img src="logo.png" class="logo-img">
+    <span class="logo-text">Skill Swap</span>
+  </div>
+
+  <div class="nav-links">
+    <span>Home</span>
+    <span>Browse Skills</span>
+    <span>Community</span>
+    <span>About</span>
+  </div>
+
+  <div class="nav-right">
+    <button class="login">Log in</button>
+    <button class="signup">Sign up</button>
+  </div>
+
+</div>
+
+    .logo-box {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo-box img {
+      width: 40px;
+    }
+
+    .logo-box h2 {
+      color: #2d2d5a;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 25px;
+      color: #333;
+      font-size: 14px;
+    }
+
+    .nav-right button {
+      padding: 8px 18px;
+      border-radius: 20px;
+      border: none;
+      margin-left: 10px;
+      cursor: pointer;
+    }
+
+    .login {
+      background: transparent;
+    }
+
+    .signup {
+      background: black;
+      color: white;
+    }
+
+    /* HERO */
+    .hero {
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .hero-text {
+      max-width: 500px;
+    }
+
+    .hero-text h1 {
+      font-size: 40px;
+      color: #1c1c3c;
+    }
+
+    .hero-text p {
+      margin: 15px 0;
+      color: #555;
+    }
+
+    .buttons button {
+      padding: 12px 20px;
+      border-radius: 25px;
+      border: none;
+      margin-right: 10px;
+      cursor: pointer;
+    }
+
+    .primary {
+      background: linear-gradient(45deg, #6c63ff, #8a7cff);
+      color: white;
+    }
+
+    .secondary {
+      background: #eee;
+    }
+
+    /* GLASS CARD */
+    .glass-card {
+      width: 250px;
+      height: 300px;
+      border-radius: 25px;
+      background: rgba(255,255,255,0.3);
+      backdrop-filter: blur(20px);
+      border: 1px solid rgba(255,255,255,0.5);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* GRADIENT SHAPES */
+    .shape1 {
+      position: absolute;
+      width: 300px;
+      height: 200px;
+      background: linear-gradient(45deg, purple, pink);
+      border-radius: 50%;
+      right: 50px;
+      top: 150px;
+      filter: blur(50px);
+    }
+
+    .shape2 {
+      position: absolute;
+      width: 150px;
+      height: 150px;
+      background: linear-gradient(45deg, orange, red);
+      border-radius: 50%;
+      right: 150px;
+      top: 300px;
+      filter: blur(40px);
+    }
+
+    /* STATS */
+    .stats {
+      margin-top: 50px;
+      display: flex;
+      gap: 50px;
+      font-size: 18px;
+    }
+
+  </style>
+</head>
+
+<body>
+
+<div class="container">
+
+  <!-- NAVBAR -->
+  <div class="navbar">
+    <div class="logo-box">
+      <img src="logo.png" alt="logo">
+      <h2>Skill Swap</h2>
+    </div>
+
+    <div class="nav-links">
+      <span>Home</span>
+      <span>Browse Skills</span>
+      <span>Community</span>
+      <span>About</span>
+    </div>
+
+    <div class="nav-right">
+      <button class="login">Log in</button>
+      <button class="signup">Sign up</button>
+    </div>
+  </div>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-text">
+      <h1>Exchange Skills,<br>Not Money.</h1>
+      <p>Learn anything by teaching something. Connect, share and grow together.</p>
+
+      <div class="buttons">
+        <button class="primary">Get Started</button>
+        <button class="secondary">Explore Skills</button>
+      </div>
+    </div>
+
+    <div class="glass-card">
+      <h3>Real People</h3>
+      <p>Real Skills</p>
+      <p>Real Growth</p>
+    </div>
+  </div>
+
+  <!-- STATS -->
+  <div class="stats">
+    <div>10K+ Users</div>
+    <div>5K+ Skills</div>
+    <div>25K+ Swaps</div>
+  </div>
+
+  <!-- SHAPES -->
+  <div class="shape1"></div>
+  <div class="shape2"></div>
+
+</div>
+
+</body>
+</html>
