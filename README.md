@@ -21,4 +21,4 @@ Backend: Firebase (Auth, Firestore, Hosting)
 
 Version Control: GitHub
 
-Author:arpit ayush
+Author: arpit ayush
